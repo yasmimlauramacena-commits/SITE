@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho | Luxen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topo">SUA ESCOLHA, SEU ESTILO, LUXEN</div>
+    <header>
+        <a class="logo logo-link" href="intex.html">
+            LUXEN
+            <span>JOIAS & ACESSÓRIOS</span>
+        </a>
+        <nav>
+            <a href="intex.html#inicio">INÍCIO</a>
+            <a href="intex.html#colecao">COLEÇÃO</a>
+            <a href="carrinho.html" target="luxenCarrinho" aria-current="page">
+                CARRINHO <span id="contagemCarrinho" aria-live="polite">(0)</span>
+            </a>
+            <a href="sobre.html">SOBRE NÓS</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carrinho" aria-labelledby="titulo-carrinho">
+            <div class="titulo-secao">
+                <small>SUA SACOLA LUXEN</small>
+                <h1 id="titulo-carrinho">Carrinho e pagamento</h1>
+                <p>Confira seus produtos, o total e escolha como prefere pagar.</p>
+            </div>
+            <div class="carrinho-conteudo">
+                <div class="carrinho-itens" id="itensCarrinho" aria-live="polite"></div>
+                <aside class="resumo-compra">
+                    <h2>Resumo da compra</h2>
+                    <p class="linha-total">
+                        <span>Total</span>
+                        <strong id="totalCarrinho">R$ 0,00</strong>
+                    </p>
+                    <fieldset class="metodos-pagamento">
+                        <legend>Forma de pagamento</legend>
+                        <label><input type="radio" name="pagamento" value="Pix" checked> Pix</label>
+                        <label><input type="radio" name="pagamento" value="Cartão de crédito"> Cartão de crédito</label>
+                        <label><input type="radio" name="pagamento" value="Boleto"> Boleto</label>
+                    </fieldset>
+                    <button class="botao-finalizar" id="finalizarCompra" type="button" disabled>
+                        CONTINUAR PARA PAGAMENTO
+                    </button>
+                    <p class="aviso-demonstracao">Demonstração: nenhuma cobrança será realizada neste site.</p>
+                    <p class="confirmacao-compra" id="confirmacaoCompra" role="status" aria-live="polite"></p>
+                    <a class="voltar-colecao" href="intex.html#colecao">CONTINUAR COMPRANDO</a>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>LUXEN</h2>
+        <p>JOIAS & ACESSÓRIOS</p>
+    </footer>
+    <script src="carrinho.js"></script>
+</body>
+</html>
+
+
